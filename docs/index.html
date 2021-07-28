@@ -6,7 +6,7 @@ body {
   background-color: white;
 }
 p {
-  color: purple;
+  color: black;
 }
 </style>
 <!-- ## ^^ CSS ^^ ## -->
@@ -14,9 +14,12 @@ p {
 <!-- ## vv HTML vv ## -->
 <body>
 <h1 id="title">TITLE</h1>
-<p id="instructions">INSTRUCTIONS</p>
-</br>
-<p id="demo"></p>
+
+<div id="instructions">
+  <p id="instructiontext">INSTRUCTIONS:</p>
+</div>  
+
+<p id="test"></p>
 </body>
 <!-- ## ^^ HTML ^^ ## -->
   
@@ -24,7 +27,7 @@ p {
 <script>
 const sheet = [0,0,0]
 let x = "frankly"
-document.getElementById("demo").innerHTML = x
+document.getElementById("test").innerHTML = x
 
 </script>
 <!-- ## ^^ JAVASCRIPT ^^ ## -->
